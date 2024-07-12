@@ -33,6 +33,25 @@ btnclose.addEventListener('click', function(){
     viewCV.close();
 });
 
+//read-more4
+const readClicked4 = document.querySelector('#read-more4');
+const textClicked4 = document.querySelector('#read-more4-text');
+const openModal4 = document.querySelector('#open-read4');
+const closeDuniatex = document.querySelector('#close4');
+
+readClicked4.addEventListener('click', function(){
+    openModal4.showModal();
+});
+
+textClicked4.addEventListener('click', function(){
+    openModal4.showModal();
+});
+
+closeDuniatex.addEventListener('click', function(){
+    openModal4.close();
+});
+
+
 //read-more1
 const readClicked1 = document.querySelector('#read-more1');
 const textClicked1 = document.querySelector('#read-more1-text');
