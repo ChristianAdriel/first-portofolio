@@ -1295,12 +1295,6 @@ body{
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: white;
-  }
-}
 
 @media (min-width: 1280px) {
   .xl\:mx-auto {
