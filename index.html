@@ -5,8 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Adriel</title>
     <link rel="stylesheet" href="public/css/style.css">
+    <style>
+        /* Light Mode (default) */
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Navbar Dark Mode */
+        .dark-mode .bg-transparent {
+            background-color: #333333;
+        }
+
+        .dark-mode .text-dark {
+            color: white;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #333333;
+        }
+
+        .dark-mode .text-primary {
+            color: #14b8a6;
+        }
+
+        .dark-mode .bg-primary {
+            background-color: #14b8a6;
+        }
+
+        /* Toggle Button Styling */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .dark-mode-toggle:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <!-- Navbar Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
